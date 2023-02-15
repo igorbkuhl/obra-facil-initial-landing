@@ -1,9 +1,20 @@
-body{
-    background-color: rgb(255, 0, 0);
+#obralogo {
+    padding: 7px;
+    padding-left: 250px;
 }
-header{
-    padding-left: 500px;
+
+#redes {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    padding-left:470px;
 }
-.redes{
-    float:right;
+
+.smlogo {
+    padding-right: 5px;
+}
+
+#txrede {
+    color: rgb(179, 179, 179);
+    padding-right: 20px;
 }

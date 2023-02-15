@@ -1,7 +1,0 @@
-header{
-    background-color: rgb(255, 0, 0);
-    padding-left: 500px;
-}
-.redes{
-    float:right;
-}
