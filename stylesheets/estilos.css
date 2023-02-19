@@ -1,8 +1,86 @@
+body {
+    background-color: rgb(235, 235, 235);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body, hr {
+    margin: 0;
+    padding: 0;
+}
+
+/* vídeo e formulário */
+#conteudo {
+    align-self: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+h2, h5, h6 {
+    font-weight: 200;
+}
+
+h5 {
+    padding-left: 225px;
+}
+
+h6 {
+    padding-top: 10px;
+}
+
+header {
+    background-color: white;
+    height: 80px;
+    width: 100%;
+}
+
+form {
+    padding-top: 20px;
+}
+
+.formulario {
+    background-color: white;
+    padding:18px;
+    padding-bottom: 1px;
+}
+
+/* campos de texto e botão de enviar */
+.texto {
+    background-color: rgb(235, 235, 235);
+    border: 1px rgb(139, 139, 139) solid;
+    border-radius: 2px;
+    padding: 10px;
+    width: 94%;
+}
+
+#forsubmit {
+    color: white;
+    background-color: rgb(118, 172, 118);
+    border: 1px rgb(65, 94, 65) solid;
+    border-radius: 2px;
+    padding: 10px;
+    width: 100%;
+}
+
+main {
+    padding-top: 30px;
+}
+
 #obralogo {
     padding: 7px;
     padding-left: 250px;
+    overflow-x:scroll;
 }
 
+p {
+    font-size: 16.6px;
+    padding-bottom: 12px;
+}
+
+p, h5, h6 {
+    color:gray
+}
+
+/* ícones das redes sociais */
 #redes {
     align-items: center;
     display: flex;
@@ -12,6 +90,10 @@
 
 .smlogo {
     padding-right: 5px;
+}
+
+td {
+    padding: 10px;
 }
 
 #txrede {
