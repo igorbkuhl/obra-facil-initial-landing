@@ -1,38 +1,64 @@
-body {
-    background-color: rgb(235, 235, 235);
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+/* logos das redes sociais e do projeto */
+header .fblogo {
+    background-image: url(../images/social_media_icons/facebook.png);
 }
 
-body, hr {
-    margin: 0;
-    padding: 0;
+header .fblogo:hover {
+    background-image: url(../images/social_media_icons/facebook-hover.png);
 }
 
-/* vídeo e formulário */
-#conteudo {
-    align-self: center;
-    display: flex;
-    justify-content: space-around;
+header .iglogo {
+    background-image: url(../images/social_media_icons/instagram.png);
 }
 
-h2, h5, h6 {
-    font-weight: 200;
+header .iglogo:hover {
+    background-image: url(../images/social_media_icons/instagram-hover.png);
 }
 
-h5 {
-    padding-left: 225px;
+header .twlogo {
+    background-image: url(../images/social_media_icons/twitter.png);
 }
 
-h6 {
-    padding-top: 10px;
+header .twlogo:hover {
+    background-image: url(../images/social_media_icons/twitter-hover.png);
+}
+
+header .ytlogo {
+    background-image: url(../images/social_media_icons/yt.png);
+}
+
+header .ytlogo:hover {
+    background-image: url(../images/social_media_icons/youtube-hover.png);
+}
+
+header .redes, header .obralogo {
+    width: 50%;
+}
+
+.siga-conectado {
+    color: rgb(179, 179, 179);
+    float: left;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-right: 25px;
 }
 
 header {
     background-color: white;
-    height: 80px;
+    border-bottom: 3px solid #ddd;
+    display: flex;
+    padding: 25px 10%;
     width: 100%;
 }
 
+header .redes a {
+    float: left;
+    height: 32px;
+    margin-left: 5px;
+    width: 32px;
+}
+
+/* vídeo e formulário */
 form {
     padding-top: 20px;
 }
@@ -43,16 +69,17 @@ form {
     padding-bottom: 1px;
 }
 
+
 /* campos de texto e botão de enviar */
 .texto {
     background-color: rgb(235, 235, 235);
     border: 1px rgb(139, 139, 139) solid;
     border-radius: 2px;
+    margin-bottom: 10px;
     padding: 10px;
     width: 94%;
 }
-
-#forsubmit {
+.enviar {
     color: white;
     background-color: rgb(118, 172, 118);
     border: 1px rgb(65, 94, 65) solid;
@@ -61,42 +88,51 @@ form {
     width: 100%;
 }
 
-main {
-    padding-top: 30px;
+/* corpo da página */
+* {
+    font-weight: 200;
 }
 
-#obralogo {
-    padding: 7px;
-    padding-left: 250px;
-    overflow-x:scroll;
+body {
+    background-color: rgb(235, 235, 235);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.conteudo{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%
+}
+
+h2 {
+    color: black;
+    font-size: 26px;
+    font-weight: normal;
+    line-height: 34px;
+}
+
+h5 {
+    padding-left: 225px;
 }
 
 p {
-    font-size: 16.6px;
-    padding-bottom: 12px;
+    font-size: 14px;
+}
+
+.intro p {
+    padding-bottom: 10px;
 }
 
 p, h5, h6 {
     color:gray
 }
 
-/* ícones das redes sociais */
-#redes {
-    align-items: center;
-    display: flex;
-    justify-content: space-around;
-    padding-left:470px;
-}
-
-.smlogo {
-    padding-right: 5px;
-}
-
 td {
     padding: 10px;
-}
-
-#txrede {
-    color: rgb(179, 179, 179);
-    padding-right: 20px;
 }

@@ -2,51 +2,40 @@
 <html lang="pt-br">
     <head>
         <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta name="author" content="Igor Borges Kühl"/>
+        <meta name="description" content="Landing page para a construtora Obra Fácil"/>
         <title>Obra Fácil</title>
+        <link href="data:image/x-icon;base64,AAABAAEAEBAQAAAAAAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAaP8AAAAAAGhiNwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIiIiIiIiIiIiEREQARERIiIRERABEREiIhABEAEQASIiEAEQARABIiIQARABEAEiIhERERERESIiIiIiIiIiIhIiIiIiIiIhESIiIiIiIhERIiIiIiIhEREiIiIiIhERESISIiIhERERIhEiIhEREREiERIhEREREREREREREREAAAAAPnwAAD58AAAmZAAAJmQAACZkAAA//AAAAAAAAIABAADAAwAAwAcAAMAPAADIHwAAzD8AAM5/AAD//wAA" rel="icon" type="image/x-icon" />
         <link rel="stylesheet" href="stylesheets/estilos.css" type="text/css"/>
     </head>
     <body>
         <header>
-            <table>
-                <tr>
-                    <td>
-                        <img id="obralogo" src="https://github.com/igorbkuhl/obra-facil-initial-landing/blob/main/images/logo.png?raw=true" alt="Logo Obra Fácil" width="134px" height="40px"/>
-                    </td>
-                    <!-- redes sociais -->
-                    <td>
-                        <div id="redes">
-                            <span id="txrede">Siga conectado</span>
-                            <img class="smlogo" id="fblogo" src="https://github.com/igorbkuhl/obra-facil-initial-landing/blob/main/images/social_media_icons/facebook.png?raw=true" alt="Facebook" 
-                            onmouseover="this.src='https://github.com/igorbkuhl/obra-facil-initial-landing/blob/main/images/social_media_icons/facebook-hover.png?raw=true'" 
-                            onmouseout="this.src='https://github.com/igorbkuhl/obra-facil-initial-landing/blob/main/images/social_media_icons/facebook.png?raw=true'"/>
-                            <img class="smlogo" id="iglogo" src="https://github.com/igorbkuhl/obra-facil-initial-landing/blob/main/images/social_media_icons/instagram.png?raw=true" alt="Instagram" 
-                            onmouseover="this.src='https://github.com/igorbkuhl/obra-facil-initial-landing/blob/main/images/social_media_icons/instagram-hover.png?raw=true'" 
-                            onmouseout="this.src='https://github.com/igorbkuhl/obra-facil-initial-landing/blob/main/images/social_media_icons/instagram.png?raw=true'"/>
-                            <img class="smlogo" id="twlogo" src="https://github.com/igorbkuhl/obra-facil-initial-landing/blob/main/images/social_media_icons/twitter.png?raw=true" alt="Twitter" 
-                            onmouseover="this.src='https://github.com/igorbkuhl/obra-facil-initial-landing/blob/main/images/social_media_icons/twitter-hover.png?raw=true'" 
-                            onmouseout="this.src='https://github.com/igorbkuhl/obra-facil-initial-landing/blob/main/images/social_media_icons/twitter.png?raw=true'"/>
-                            <img class="smlogo" id="ytlogo" src="https://github.com/igorbkuhl/obra-facil-initial-landing/blob/main/images/social_media_icons/yt.png?raw=true" alt="YouTube" 
-                            onmouseover="this.src='https://github.com/igorbkuhl/obra-facil-initial-landing/blob/main/images/social_media_icons/youtube-hover.png?raw=true'" 
-                            onmouseout="this.src='https://github.com/igorbkuhl/obra-facil-initial-landing/blob/main/images/social_media_icons/yt.png?raw=true'"/>
-                        </div>
-                    </td>
-                </tr>
-            </table>
+            <div class="obralogo">
+                <img src="https://github.com/igorbkuhl/obra-facil-initial-landing/blob/main/images/logo.png?raw=true" alt="Logo Obra Fácil" width="134px" height="40px"/>
+            </div>
+            <!-- redes sociais -->
+            <div class="redes">
+                <span class="siga-conectado">Siga conectado </span>
+                <a href="#" title="Facebook" class="smlogo fblogo"></a>
+                <a href="#" title="Instagram" class="smlogo iglogo"></a>
+                <a href="#" title="Twitter" class="smlogo twlogo"></a>
+                <a href="#" title="YouTube" class="smlogo ytlogo"></a>
+            </div>
         </header>
-        <hr>
-        <main>
-            <table id="conteudo">
+        <main class="conteudo">
+            <table>
                 <tr>
                     <!-- introdução e vídeo -->
                     <td>
                         <div>
-                            <div id="intro">
+                            <div class="intro">
                                 <h2>Teu lar reformado, energia renovada!</h2>
-                                <p>Tornar sua casa uma demonstração da sua personalidade é<br/>nossa paixão.</p>
+                                <p>Tornar sua casa uma demonstração da sua personalidade é nossa paixão.</p>
                             </div>
                             <div class="player">
-                                <iframe width="500" height="281" src="https://www.youtube.com/embed/OT8OEiQXmI4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/kcCoNengrHI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                             </div>
                         </div>
                     </td>
@@ -54,19 +43,21 @@
                     <td>
                         <div class="formulario">
                             <h2>OBRAS RÁPIDAS E BARATAS!</h2>
-                            <p>Somos especialistas em obras,<br/>reformas e construção de sonhos.</p>   
-                            <form action="/action_page.php" method="post">
-                                <input type="text" name="Nome" id="formnome" class="texto" placeholder="Seu nome"><br/><br/>
-                                <input type="tel" name="Tel" id="fortel" class="texto" placeholder="Seu telefone"><br/><br/>
-                                <input type="mail" name="Mail" id="formail" class="texto" placeholder="Seu e-mail"><br/><br/>
-                                <input type="submit" name="Enviar" id="forsubmit" class="enviar" value="FALE CONOSCO">
+                            <p>Somos especialistas em obras, reformas e construção de sonhos.</p>   
+                            <form name="lead" action="#" method="post">
+                                <input type="text" name="Nome" class="texto" placeholder="Seu nome" minlength="3" required>
+                                <input type="tel" name="Tel" class="texto" placeholder="Seu telefone" min="8" required>
+                                <input type="mail" name="Mail" class="texto" placeholder="Seu e-mail" minlength="12" required>
+                                <input type="submit" name="Enviar" class="enviar" value="FALE CONOSCO">
                             </form>
                             <h6>*Obs: entraremos em contato em até 24 horas.</h6>
                         </div>
                     </td>
                 </tr>
             </table>
-            <h5>Todos os direitos reservados Copyright &copy; 2023 Obras Fácil</h5>
         </main>
+        <footer>
+            <h5>Todos os direitos reservados Copyright &copy; 2023 Obras Fácil</h5>
+        </footer>
     </body>
 </html>
