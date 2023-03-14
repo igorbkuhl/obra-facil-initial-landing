@@ -1,3 +1,7 @@
+/* geral */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,400&display=swap');
+* {font-family: 'Open Sans', sans-serif;}
+
 /* logos das redes sociais e do projeto */
 header .fblogo {
     background-image: url(../images/social_media_icons/facebook.png);
@@ -59,14 +63,33 @@ header .redes a {
 }
 
 /* vídeo e formulário */
-form {
-    padding-top: 20px;
+
+.video-area {
+    margin-right: 10px;
 }
 
 .formulario {
     background-color: white;
-    padding:18px;
-    padding-bottom: 1px;
+    margin-left: 10px;
+    width: 400px;
+}
+
+form, div.form-header, .obs {
+    margin: 20px;
+    padding-bottom: 10px;
+}
+
+form {
+    margin: 20px
+}
+
+form h2 {
+    margin: 0;
+    padding: 30px 20px;
+}
+
+.obs {
+    font-size: 12px;
 }
 
 
@@ -80,34 +103,36 @@ form {
     width: 94%;
 }
 .enviar {
-    color: white;
     background-color: rgb(118, 172, 118);
     border: 1px rgb(65, 94, 65) solid;
     border-radius: 2px;
+    color: white;
+    font-weight: 400;
+    height: 40px;
     padding: 10px;
+    text-transform: uppercase;
     width: 100%;
 }
 
 /* corpo da página */
 * {
-    font-weight: 200;
+    font-weight: 300;
 }
 
 body {
     background-color: rgb(235, 235, 235);
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
     padding: 0;
 }
 
 .conteudo{
-    align-items: center;
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
-    margin-left: auto;
+    padding: 50px 10%;
+    /*margin-left: auto;
     margin-right: auto;
-    width: 75%
+    width: 75%*/
 }
 
 h2 {
@@ -129,10 +154,6 @@ p {
     padding-bottom: 10px;
 }
 
-p, h5, h6 {
+p, h5, span {
     color:gray
-}
-
-td {
-    padding: 10px;
 }
